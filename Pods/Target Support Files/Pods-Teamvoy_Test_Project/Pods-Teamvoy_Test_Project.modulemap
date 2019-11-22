@@ -1,0 +1,6 @@
+framework module Pods_Teamvoy_Test_Project {
+  umbrella header "Pods-Teamvoy_Test_Project-umbrella.h"
+
+  export *
+  module * { export * }
+}

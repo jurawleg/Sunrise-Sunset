@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Teamvoy_Test_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-1C-PEL">
+                                <rect key="frame" x="16" y="40" width="343" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="ygY-oE-iac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyF-GZ-YtU">
+                                <rect key="frame" x="12" y="226" width="351" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You can choose any place you want to see sunrise/sunset time for  this place.
+Just enter full name of city you want to find (on English).</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder=" Enter the city name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k86-ZX-ARh">
+                                <rect key="frame" x="12" y="310" width="351" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C6X-I0-XpZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WZ-4G-wr4">
+                                <rect key="frame" x="152.5" y="376" width="70" height="36"/>
+                                <color key="backgroundColor" red="0.77767925613496935" green="0.026924367331288345" blue="0.14133195935582821" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" Search ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQX-1L-GMY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86i-3J-klY">
+                                <rect key="frame" x="12" y="352" width="351" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Lth-d9-mbY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mf-yw-Hia">
+                                <rect key="frame" x="86.5" y="178" width="202" height="30"/>
+                                <color key="backgroundColor" red="0.21642542177914109" green="0.25371453220858897" blue="0.77376102377300615" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Nw-fq-Hep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title=" Show info for my location ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBy-zP-iaA"/>
+                                    <action selector="showInfoForUserLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9C-Vz-SbG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97513728685657286" green="0.97513728685657286" blue="0.97513728685657286" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k86-ZX-ARh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="1mm-Fu-Yyq"/>
+                            <constraint firstItem="8Mf-yw-Hia" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2y9-5Y-Q2k"/>
+                            <constraint firstItem="9WZ-4G-wr4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5BK-I7-dn2"/>
+                            <constraint firstItem="OyF-GZ-YtU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="6Bt-uk-ogR"/>
+                            <constraint firstItem="OyF-GZ-YtU" firstAttribute="top" secondItem="8Mf-yw-Hia" secondAttribute="bottom" constant="18" id="6CY-sl-YfQ"/>
+                            <constraint firstItem="86i-3J-klY" firstAttribute="trailing" secondItem="k86-ZX-ARh" secondAttribute="trailing" id="BTn-xb-GxI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OyF-GZ-YtU" secondAttribute="trailing" constant="12" id="OhS-r5-WOx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9WZ-4G-wr4" secondAttribute="bottom" constant="32" id="UI4-D2-X73"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DoB-1C-PEL" secondAttribute="trailing" constant="16" id="cQx-rX-Q9j"/>
+                            <constraint firstItem="DoB-1C-PEL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jrd-5K-XT1"/>
+                            <constraint firstItem="86i-3J-klY" firstAttribute="top" secondItem="k86-ZX-ARh" secondAttribute="bottom" constant="12" id="lXX-1K-yr4"/>
+                            <constraint firstItem="DoB-1C-PEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="n59-ep-5pC"/>
+                            <constraint firstItem="9WZ-4G-wr4" firstAttribute="top" secondItem="86i-3J-klY" secondAttribute="bottom" constant="24" id="pfc-HC-aCw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k86-ZX-ARh" secondAttribute="trailing" constant="12" id="rZP-NM-6YS"/>
+                            <constraint firstItem="8Mf-yw-Hia" firstAttribute="top" secondItem="DoB-1C-PEL" secondAttribute="bottom" constant="18" id="wZx-rt-Z2v"/>
+                            <constraint firstItem="k86-ZX-ARh" firstAttribute="top" secondItem="OyF-GZ-YtU" secondAttribute="bottom" constant="12" id="yVT-k7-qpS"/>
+                            <constraint firstItem="86i-3J-klY" firstAttribute="leading" secondItem="k86-ZX-ARh" secondAttribute="leading" id="yga-Rp-nKS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityWasFoundLabel" destination="86i-3J-klY" id="4vX-no-2Wd"/>
+                        <outlet property="infoLabel" destination="DoB-1C-PEL" id="qRX-Kd-eo6"/>
+                        <outlet property="searchTextField" destination="k86-ZX-ARh" id="D0Q-8R-U9g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
