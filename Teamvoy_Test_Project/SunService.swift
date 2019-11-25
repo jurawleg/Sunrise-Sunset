@@ -60,7 +60,7 @@ class SunService {
             
             if let error = error {
                 debugPrint("DATA TASK ERROR - \(error.localizedDescription)")
-                NotificationCenter.default.post(name: .unexpetedError, object: nil, userInfo: nil)
+                NotificationCenter.default.post(name: .unexpeсtedError, object: nil, userInfo: nil)
                 // Need to show some alarm for user
                 // Create special method for notificate user what happened
             } else if let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 {
@@ -80,7 +80,7 @@ class SunService {
                     
                     } else {
                         debugPrint("SOME WEIRD THINGS ARE HAPPENING - TROUBLE WITH JSON DESERIALISATION")
-                        NotificationCenter.default.post(name: .unexpetedError, object: nil, userInfo: nil)
+                        NotificationCenter.default.post(name: .unexpeсtedError, object: nil, userInfo: nil)
                         // Need to show some alarm for user
                         // Create special method for notificate user what happened
                     }
