@@ -24,6 +24,12 @@ class MainVC_Presenter {
         NotificationCenter.default.addObserver(self, selector: #selector(showResultOnLabel), name: .updateCityLabel, object: nil)
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .updateScreen, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .updateCityLabel, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .updateCustomPlaceInfo, object: nil)
+    }
+    
     var delegate: MainVCDelegate!
     
     @objc func showInfo() {
