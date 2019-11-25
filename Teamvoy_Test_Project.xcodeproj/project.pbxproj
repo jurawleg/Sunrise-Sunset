@@ -13,7 +13,7 @@
 		AB16EE3B2386D7AB008839E9 /* SunsetSunriseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE3A2386D7AB008839E9 /* SunsetSunriseClass.swift */; };
 		AB16EE3D2388017E008839E9 /* InfoPresenterStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE3C2388017E008839E9 /* InfoPresenterStorage.swift */; };
 		AB16EE3F23880214008839E9 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE3E23880214008839E9 /* NotificationExtension.swift */; };
-		AB16EE4123880512008839E9 /* MianVC_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE4023880512008839E9 /* MianVC_Extension.swift */; };
+		AB16EE4123880512008839E9 /* MainVC_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE4023880512008839E9 /* MainVC_Extension.swift */; };
 		AB16EE4523880789008839E9 /* PlaceStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE4423880789008839E9 /* PlaceStruct.swift */; };
 		AB16EE4723880F72008839E9 /* CityStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB16EE4623880F72008839E9 /* CityStruct.swift */; };
 		AB255976238442A500AEE24B /* DataPullService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB255975238442A500AEE24B /* DataPullService.swift */; };
@@ -33,7 +33,7 @@
 		AB16EE3A2386D7AB008839E9 /* SunsetSunriseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunsetSunriseClass.swift; sourceTree = "<group>"; };
 		AB16EE3C2388017E008839E9 /* InfoPresenterStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPresenterStorage.swift; sourceTree = "<group>"; };
 		AB16EE3E23880214008839E9 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
-		AB16EE4023880512008839E9 /* MianVC_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MianVC_Extension.swift; sourceTree = "<group>"; };
+		AB16EE4023880512008839E9 /* MainVC_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC_Extension.swift; sourceTree = "<group>"; };
 		AB16EE4423880789008839E9 /* PlaceStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceStruct.swift; sourceTree = "<group>"; };
 		AB16EE4623880F72008839E9 /* CityStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStruct.swift; sourceTree = "<group>"; };
 		AB255975238442A500AEE24B /* DataPullService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPullService.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			children = (
 				AB3EC829237EF4FA001D43B7 /* MainViewController.swift */,
 				AB16EE362386D024008839E9 /* MainVC_Presenter.swift */,
-				AB16EE4023880512008839E9 /* MianVC_Extension.swift */,
+				AB16EE4023880512008839E9 /* MainVC_Extension.swift */,
 			);
 			path = "MainViewController files";
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 				AB16EE372386D024008839E9 /* MainVC_Presenter.swift in Sources */,
 				AB255976238442A500AEE24B /* DataPullService.swift in Sources */,
 				AB16EE3D2388017E008839E9 /* InfoPresenterStorage.swift in Sources */,
-				AB16EE4123880512008839E9 /* MianVC_Extension.swift in Sources */,
+				AB16EE4123880512008839E9 /* MainVC_Extension.swift in Sources */,
 				AB3EC828237EF4FA001D43B7 /* AppDelegate.swift in Sources */,
 				AB16EE3B2386D7AB008839E9 /* SunsetSunriseClass.swift in Sources */,
 			);
